@@ -1,6 +1,6 @@
 # iBLOPPER-ESP8266
 
-## What is the iBLOPPER?
+### What is the iBLOPPER?
 iBLOPPER is a Bubble Logger or more precise an activity fermentation logger and temperature controller to be attached to your (S)airlock. It detects the release of a bubble, reporting, Blops pr. min (BPM), indicative SG estimate and temperature into iBLOPPER CLOUD.
 
 We support two different versions of iBLOPPER either detection by vibration/gyroscope sensor (iBLOPPERV) or by using a sound sensor (iBLOPPERS). By 2023 we promote the sound version as best suited for (s)airlocks and most users. A
@@ -12,7 +12,7 @@ To use the “iBLOPPER” just attach the iBLOPPER to your airlock, then enter y
 ![image](https://github.com/kbaggen/iBLOPPER-ESP8266/assets/16992918/2af5d56a-ccba-4deb-912c-fb24895f3323)
 
 
-## iBLOPPER CLOUD CONNECTED. 
+### iBLOPPER CLOUD CONNECTED. 
 The Logger is completely autonomous, hence, only need wifi credentials set once and else all handling/controlling is entirely done at the iBLOPPER CLOUD page. Hence, please register with your 7-8 cipher unique iBLOPPER Number at iBLOPPER CLOUD.
 
 At the CLOUD you can set brew name, size, OG and polynomial for speed of fermentation. You can ofcouse start, stop and delete logged brews.
@@ -24,7 +24,7 @@ iBLOPPER CLOUD is a crude installment for a CLOUD service, but continuedly work 
 
 
 
-## Temperatur Control by Smart Wifi Plug
+### Temperatur Control by Smart Wifi Plug
 iBLOPPER (from version 4.0.0 of early 2023) can trigger a set of Wifi Smart Plug from Shelly or Tasmota over your local internet by http commands and hence you can control your frezzer/heating agent from iBLOPPER CLOUD.
 
 Currently we propose you buy “Athom – Tasmota Plug” as they is avaivble, very easy to set up and shiped all over the globe.
@@ -33,7 +33,7 @@ All plugs need to be on same local network as the iBLOPPER and hence, the iBLOPP
 ![image](https://github.com/kbaggen/iBLOPPER-ESP8266/assets/16992918/e890aaf4-c982-443d-82de-7b36696d4c46)
 
 
-## Further interduction
+### Further interduction
 The iBLOPPER is an Arduino device (ESP8266). It monitor your yeast activity by motioning the CO2 blops pr. minute (BPM). Besides BPM, also “Sum blops/L” and temperature is logged. Based on Sum Blops/L indicative gravity estimate is given by polynomial/modelistic approach.
 
 We support two different versions of iBLOPPER either detection by vibration/gyroscope sensor (iBLOPPERV) or by using a sound sensor (iBLOPPERS).
@@ -60,24 +60,20 @@ Hydrometer reading of OG and “one hydrometer reading” must be precise. This 
 
 (1 Reduction in gravity, rG = OG – SG)
 
-## Videos
-https://youtu.be/rfGtCtaYLWA
-https://youtu.be/XYqAmXFoWy8
+### Videos
+* https://youtu.be/rfGtCtaYLWA
+* https://youtu.be/XYqAmXFoWy8
 
 
 # How To build, install and setup?
 ## Sound Version
 To build the sound version you will need a:
 
-1x NodeMCU V2
-
-1x LM393 sound sensor
-
-1x 70cm 3 pin cord (female till female).
-
-1x DFrobort temperature sensor (d18b20)
-
-1x Waterproof-Plastic-Electric-Project-Case-Junction-Box-55x35x15mm or or just a TickTax box.
+* 1x NodeMCU V2
+* 1x LM393 sound sensor
+* 1x 70cm 3 pin cord (female till female).
+* 1x DFrobort temperature sensor (d18b20)
+* 1x Waterproof-Plastic-Electric-Project-Case-Junction-Box-55x35x15mm or or just a TickTax box.
 ![image](https://github.com/kbaggen/iBLOPPER-ESP8266/assets/16992918/2696ecd9-ce55-4228-b4ec-eb42b9eb467c)
 
 
@@ -89,9 +85,7 @@ For temperature probe you connect GRD till D5, and VCC till D6, while data goes 
 ![image](https://github.com/kbaggen/iBLOPPER-ESP8266/assets/16992918/7082cfe7-6afc-4fe4-95d9-b053fdbb2b58)
 
 
-Building Sound Sensor?
-
-Building the sound sensor.
+### Building the sound sensor.
 Building the sound sensor is easy, and you just need to add a bit of tape to steady the microphone. Secondly, add a balloon as moisture protection.
 
 The LM393 sensor fits nicely in a S-airlock, and should be pressed whole way down. It should still allowe the pressure to get out, but else make a somehow tight “seal”.
@@ -106,13 +100,21 @@ Video: https://youtu.be/ms6W1qMlyHk
 
 To build an iBLOPPER Vibration you need:
 
-1x Wemos D1 Mini.
-1x DS18b20 probe, 1 meter, + resistor (4.7K Ω Resistor)
-1x MPU6050
-1x Waterproof-Plastic-Electric-Project-Case-Junction-Box-55x35x15mm or or just a TickTax box.
+* 1x Wemos D1 Mini.
+* 1x DS18b20 probe, 1 meter, + resistor (4.7K Ω Resistor)
+* 1x MPU6050
+* 1x Waterproof-Plastic-Electric-Project-Case-Junction-Box-55x35x15mm or or just a TickTax box.
 ![image](https://github.com/kbaggen/iBLOPPER-ESP8266/assets/16992918/1b55ac08-4edf-41ca-876a-b925ca18226b)
 
 
-Below you find the diagram of D1 Mini build.
+### Below you find the diagram of D1 Mini build.
 ![image](https://github.com/kbaggen/iBLOPPER-ESP8266/assets/16992918/ab5c436a-764c-45d4-a59e-e2e43eb2036f)
 
+## Installing and install files for Both Version
+To install you need:
+
+
+* Install Windows CH340 Driver (Wemos D1 mini + NodeMCU v3) or CP210x USB to UART Bridge VCP Drivers (NodeMCU v2) so you PC can find and see the NodeMCU/Wemos D1 Mini. Try both if issues.
+Install ESP Home Flasher, e.g. flash program to flash install-bins (see below). The flash program also give your the possibility to see and view what going on inside logger (see video above).
+* Download the below Install-bin files accordingly. Please see releases to the left sidebar.
+* To install the bin file you should use “ESP Home Flasher”, and please also notice this flasher program can be uses to see what happens in the logger during the run. Hence, please use it to play a bit around and check everything. ![image](https://github.com/kbaggen/iBLOPPER-ESP8266/assets/16992918/cdb9eafa-b819-4756-8d51-d9a6e434b4cd)
