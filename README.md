@@ -118,3 +118,50 @@ To install you need:
 Install ESP Home Flasher, e.g. flash program to flash install-bins (see below). The flash program also give your the possibility to see and view what going on inside logger (see video above).
 * Download the below Install-bin files accordingly. Please see releases to the left sidebar.
 * To install the bin file you should use “ESP Home Flasher”, and please also notice this flasher program can be uses to see what happens in the logger during the run. Hence, please use it to play a bit around and check everything. ![image](https://github.com/kbaggen/iBLOPPER-ESP8266/assets/16992918/cdb9eafa-b819-4756-8d51-d9a6e434b4cd)
+
+### Setup WiFi
+The only thing you need to do in iBLOPPER is to enter the WiFi credentials of your WiFi network. Please notice the iBLOPPER number as you must use the number as your username when register your account at iBLOPPER CLOUD.
+![image](https://github.com/kbaggen/iBLOPPER-ESP8266/assets/16992918/d278c22f-a46f-42b8-8bad-971feac44f67)
+
+### Register and login
+To register your account you must use the iBLOPPER number as shown above under Setup WiFI, eg “iBLOPPER CONNECT 8799914” and only this number based username can be used. It must be the number your iBLOPPER show, and you cannot use others at all.
+![image](https://github.com/kbaggen/iBLOPPER-ESP8266/assets/16992918/36d92163-2ae6-4ad3-9009-a9c8c0969f93)
+
+## FAQ
+### Important “take on messages” for estrimating SG by iBLOPPER
+* Sensor should be calibrated till “hear and see” matching count, e.g. adjust sensitivity in portal mode if needed (4 should be fine for vibration, and for sound use the pontentimeter). The “one hydrometer reading” approach somehow will solve any calibration errors, but if you wish to have a “true” and quantitative picture of BPM the calibration should be considered.
+* 5 ml water in S-Airlock to get best sound blop/vibration.
+* Use a fermenter there is airtight. Be a “Leak Hunter”!
+* Take notice of your amounts in Liters and set this in iBLOPPER CLOUD. Same for OG.
+* Take “one hydrometer reading” during brewing and recalculate the polynomial for this brew and adjust it accordingly.
+* PLEASE NOTICE, this “one hydrometer reading” need to be precise, hence, double check it and read up on how to take hydrometer readings (Good hydrometer technics includes letting the sample sediment, adjusting for temperature of 20´C and foremost de-gas it before taken the reading).
+* Make use of slow and controlled fermentation and/or good headspace above 20%. Especially when brewing wheat beer where foaming is an issue.
+* Or, use a closed airtight blow-out system.
+* Steady WiFi is needed for the logger to obtain data it needs for calculation.
+* LIMITATION: For iBLOPPER working by detecting vibration at the release of a bubble, hence, you will need to isolate the fermenter from vibrations and hence best to place fermenters away from washing machine, etc. I use flamingo in my cooler to isolate the vibrations. Also the cord must be isolated from any vibration especially when using a cooler.
+
+
+### Best settings for S-airlock
+Tiny hole in S-airlock needed to equalize pressure as cap must be on to lower evaporation.
+The iBLOPPER needs a baseline or “start-out” polynomial for the S-airlock and also a few other setting/considerations need to be done.
+
+You can choose to enter a “Start out polynomial” based on experaince or just leave it blank until you take a midterm gravity just after high kreuzen.
+
+Start-out Polynomial for airtight fermenters (there’s a tendency higher headspace give higher polynomial) :
+* headspace% * 0.00027 (eg. 50 * 0.00027 = 0.0135x).
+* Add 25-33% for metal fermenters, see below.
+* 5 ml water in airlock
+* Cap/”hat” on to lower evaporation for iBLOPPER running with vibration.
+i* BLOPPER vibration Sensitivity: 4 best for proposed box, or finetune it based on the plate/box/cap you use.
+
+If using none-airtight fermenters (buckets) the polynomial will be different (way higher as you loose CO2), and as such needs further considerations. The “one hydrometer reading” will tell you the speed of fermentation, but the difference between start-out polynomial and your final polynomial will be more pronounced.
+
+### Metal fermenters will have higher polynomial
+It is our experience metal fermenters do have a higher polynomial than above polynomial build on plastic fermenters, and hence add 25%- 33% till above start-out polynomials for metal fermenters. Hence, if you have a metal fermenter + headspace of 50% your polynomial is around: 50 * 0.00027 *1.25 = 0.0169
+
+### Other Airlocks?
+I have not in full tested other than S-airlocks. The 3-4 test brew I done with other types of airlocks indicate iBLOPPER vibration works somehow with other airlocks. The scope of iBLOPPER is S-airlock though and especially together with a blow-out system.
+
+
+
+
