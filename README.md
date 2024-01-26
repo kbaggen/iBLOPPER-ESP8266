@@ -9,8 +9,7 @@ Secondly, the iBLOPPER can trigger a set of Wifi Smart Plug from Shelly or Tasmo
 
 To use the “iBLOPPER” just attach the iBLOPPER to your airlock, then enter your brew details at iBLOPPER CLOUD. During the brew at preferably after high kreutzen you will need to take one hydrometer reading and by very simple math you will be able to predict the final gravity by a few units. All while you monitor from the outside of the fermenter.
 
-![image]([https://iblopper.bubble-logger.com/wp-content/uploads/2023/12/Untitled-video-11.gif])
-
+https://iblopper.bubble-logger.com/wp-content/uploads/2023/09/Untitled-video-2-1-edited.gif
 
 iBLOPPER CLOUD
 iBLOPPER CLOUD CONNECTED. The Logger is completely autonomous, hence, only need wifi credentials set once and else all handling/controlling is entirely done at the iBLOPPER CLOUD page. Hence, please register with your 7-8 cipher unique iBLOPPER Number at iBLOPPER CLOUD.
