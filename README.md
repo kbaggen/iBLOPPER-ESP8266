@@ -1,6 +1,9 @@
 # iBLOPPER-ESP8266
 iBLOPPER CLOUD --> https://bubble-logger.com/line-chart/login.php
 ### What is the iBLOPPER?
+![image](https://github.com/kbaggen/iBLOPPER-ESP8266/assets/16992918/0420c315-b8d8-4566-b6cc-2fbb8b7bbd76)
+
+
 iBLOPPER is a Bubble Logger or more precise an activity fermentation logger and temperature controller to be attached to your (S)airlock. It detects the release of a bubble, reporting, Blops pr. min (BPM), indicative SG estimate and temperature into iBLOPPER CLOUD.
 
 We support two different versions of iBLOPPER either detection by vibration/gyroscope sensor (iBLOPPERV) or by using a sound sensor (iBLOPPERS). By 2023 we promote the sound version as best suited for (s)airlocks and most users. A
