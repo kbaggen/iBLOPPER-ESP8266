@@ -114,10 +114,11 @@ To build an iBLOPPER Vibration you need:
 To install you need:
 
 
-* Install Windows CH340 Driver (Wemos D1 mini + NodeMCU v3) or CP210x USB to UART Bridge VCP Drivers (NodeMCU v2) so you PC can find and see the NodeMCU/Wemos D1 Mini. Try both if issues.
-Install ESP Home Flasher, e.g. flash program to flash install-bins (see below). The flash program also give your the possibility to see and view what going on inside logger (see video above).
-* Download the below Install-bin files accordingly. Please see releases to the left sidebar.
-* To install the bin file you should use “ESP Home Flasher”, and please also notice this flasher program can be uses to see what happens in the logger during the run. Hence, please use it to play a bit around and check everything. ![image](https://github.com/kbaggen/iBLOPPER-ESP8266/assets/16992918/cdb9eafa-b819-4756-8d51-d9a6e434b4cd)
+1. Install CP210x USB to UART Bridge VCP Drivers (https://www.silabs.com/developers/usb-to-uart-bridge-vcp-drivers) so you PC can find and see the ESP32.
+> 2. Install ESP Home Flasher (https://github.com/esphome/esphome-flasher/releases), e.g. flash program to flash install-bins onto the ESP32. The flash program also give your the possibility to see and view what going on inside logger.
+> 2. Or you can use the Update function in the AP portal when powering on the logger if SPINDELMATE already installed in earlier version. 
+> 3. Download and run the Install-bin files accordingly in ESP Home Flasher (or AP portal). Please see releases to the left sidebar.
+Please also notice this flasher program can be uses to see what happens in the logger during the run. Hence, please use it to play a bit around and check everything. ![image](https://github.com/kbaggen/iBLOPPER-ESP8266/assets/16992918/cdb9eafa-b819-4756-8d51-d9a6e434b4cd)
 
 ### Setup WiFi
 The only thing you need to do in iBLOPPER is to enter the WiFi credentials of your WiFi network. Please notice the iBLOPPER number as you must use the number as your username when register your account at iBLOPPER CLOUD.
