@@ -60,9 +60,59 @@ Hydrometer reading of OG and “one hydrometer reading” must be precise. This 
 
 (1 Reduction in gravity, rG = OG – SG)
 
-Videos:
-https://youtu.be/XYqAmXFoWy8
+## Videos
 https://youtu.be/rfGtCtaYLWA
+https://youtu.be/XYqAmXFoWy8
 
 
+# How To build, install and setup?
+## Sound Version
+To build the sound version you will need a:
+
+1x NodeMCU V2
+
+1x LM393 sound sensor
+
+1x 70cm 3 pin cord (female till female).
+
+1x DFrobort temperature sensor (d18b20)
+
+1x Waterproof-Plastic-Electric-Project-Case-Junction-Box-55x35x15mm or or just a TickTax box.
+![image](https://github.com/kbaggen/iBLOPPER-ESP8266/assets/16992918/2696ecd9-ce55-4228-b4ec-eb42b9eb467c)
+
+
+Pinout:
+
+The sound sensor is connected so VCC goes till D0, and GRD till D1, while out (data) goes till D2.
+
+For temperature probe you connect GRD till D5, and VCC till D6, while data goes till D7.
+![image](https://github.com/kbaggen/iBLOPPER-ESP8266/assets/16992918/7082cfe7-6afc-4fe4-95d9-b053fdbb2b58)
+
+
+Building Sound Sensor?
+
+Building the sound sensor.
+Building the sound sensor is easy, and you just need to add a bit of tape to steady the microphone. Secondly, add a balloon as moisture protection.
+
+The LM393 sensor fits nicely in a S-airlock, and should be pressed whole way down. It should still allowe the pressure to get out, but else make a somehow tight “seal”.
+
+The sensitivity of the sound sensor can be adjusted by the small potentiometer on the sensor. In general turn the potentiometer all the way down till LED light fully, and then just turn it down until light stop + a little nudge more.
+
+In iBLOPPER CLOUD you can select the use of the sound version.
+![image](https://github.com/kbaggen/iBLOPPER-ESP8266/assets/16992918/bba0844e-a9d1-46ab-aa1f-33e876811e19)
+
+## Vibration version
+Video: https://youtu.be/ms6W1qMlyHk
+
+To build an iBLOPPER Vibration you need:
+
+1x Wemos D1 Mini.
+1x DS18b20 probe, 1 meter, + resistor (4.7K Ω Resistor)
+1x MPU6050
+1x Waterproof-Plastic-Electric-Project-Case-Junction-Box-55x35x15mm or or just a TickTax box.
+![image](https://github.com/kbaggen/iBLOPPER-ESP8266/assets/16992918/1b55ac08-4edf-41ca-876a-b925ca18226b)
+
+
+Below you find the diagram of D1 Mini build.
+![image](https://github.com/kbaggen/iBLOPPER-ESP8266/assets/16992918/ab5c436a-764c-45d4-a59e-e2e43eb2036f)
 
