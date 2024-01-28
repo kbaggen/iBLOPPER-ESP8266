@@ -116,8 +116,8 @@ To build an iBLOPPER Vibration you need:
 ## Installing and install files for Both Version
 To install you need:
 
-1. Install CP210x USB to UART Bridge VCP Drivers (https://www.silabs.com/developers/usb-to-uart-bridge-vcp-drivers) so you PC can find and see the ESP32.
-2. Install ESP Home Flasher (https://github.com/esphome/esphome-flasher/releases), e.g. flash program to flash install-bins onto the ESP32. The flash program also give your the possibility to see and view what going on inside logger.
+1.Install  Windows CH340 Driver (Wemos D1 mini + NodeMCU v3) or  CP210x USB to UART Bridge VCP Drivers (NodeMCU v2) so you PC can find and see the NodeMCU/Wemos D1 Mini. Try both if issues.
+2. Install ESP Home Flasher (https://github.com/esphome/esphome-flasher/releases), e.g. flash program to flash install-bins onto the ESP8266. The flash program also give your the possibility to see and view what going on inside logger.
 3. Or you can use the Update function in the AP portal when powering on the logger if SPINDELMATE already installed in earlier version. 
 4. Download and run the Install-bin files accordingly in ESP Home Flasher (or AP portal). Please see releases to the left sidebar.
 Please also notice this flasher program can be uses to see what happens in the logger during the run. Hence, please use it to play a bit around and check everything.
