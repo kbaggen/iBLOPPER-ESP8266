@@ -6,7 +6,7 @@ iBLOPPER CLOUD --> https://bubble-logger.com/line-chart/login.php
 
 iBLOPPER is a Bubble Logger or more precise an activity fermentation logger and temperature controller to be attached to your (S)airlock. It detects the release of a bubble, reporting, Blops pr. min (BPM), indicative SG estimate and temperature into iBLOPPER CLOUD.
 
-We support two different versions of iBLOPPER either detection by vibration/gyroscope sensor (iBLOPPERV) or by using a sound sensor (iBLOPPERS). 
+We support two different versions of iBLOPPER either detection by vibration/gyroscope sensor (iBLOPPER-vibration) or by using a sound sensor (iBLOPPER-Ssound ~ https://youtu.be/XYqAmXFoWy8). 
 
 Secondly, the iBLOPPER can trigger a set of Wifi Smart Plug from Shelly or Tasmota over your local internet by http commands and hence you can control your frezzer/heating agent from iBLOPPER CLOUD.
 
@@ -115,10 +115,11 @@ To build an iBLOPPER Vibration you need:
 ## Installing and install files for Both Version
 To install you need:
 
-1.Install  Windows CH340 Driver (Wemos D1 mini + NodeMCU v3) or  CP210x USB to UART Bridge VCP Drivers (NodeMCU v2) so you PC can find and see the NodeMCU/Wemos D1 Mini. Try both if issues.
-2. Install ESP Home Flasher (https://github.com/esphome/esphome-flasher/releases), e.g. flash program to flash install-bins onto the ESP8266. The flash program also give your the possibility to see and view what going on inside logger.
-3. Or you can use the Update function in the AP portal when powering on the logger if SPINDELMATE already installed in earlier version. 
-4. Download and run the Install-bin files accordingly in ESP Home Flasher (or AP portal). Please see releases to the left sidebar.
+* 1.Install  Windows CH340 Driver (Wemos D1 mini + NodeMCU v3) or  CP210x USB to UART Bridge VCP Drivers (NodeMCU v2) so you PC can find and see the NodeMCU/Wemos D1 Mini. Try both if issues.
+* 2. Install ESP Home Flasher (https://github.com/esphome/esphome-flasher/releases), e.g. flash program to flash install-bins onto the ESP8266. The flash program also give your the possibility to see and view what going on inside logger.
+* 3. Or you can use the Update function in the AP portal when powering on the logger if SPINDELMATE already installed in earlier version. 
+* 4. Download and run the Install-bin files accordingly in ESP Home Flasher (or AP portal). Please see releases to the left sidebar.
+
 Please also notice this flasher program can be uses to see what happens in the logger during the run. Hence, please use it to play a bit around and check everything.
  ![image](https://github.com/kbaggen/iBLOPPER-ESP8266/assets/16992918/cdb9eafa-b819-4756-8d51-d9a6e434b4cd)
 
