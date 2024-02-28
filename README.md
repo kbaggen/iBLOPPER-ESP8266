@@ -2,17 +2,16 @@
 iBLOPPER CLOUD --> https://bubble-logger.com/line-chart/login.php
 ### What is the iBLOPPER?
 ![image](https://github.com/kbaggen/iBLOPPER-ESP8266/assets/16992918/0420c315-b8d8-4566-b6cc-2fbb8b7bbd76)
-
+* https://youtu.be/rfGtCtaYLWA
 
 iBLOPPER is a Bubble Logger or more precise an activity fermentation logger and temperature controller to be attached to your (S)airlock. It detects the release of a bubble, reporting, Blops pr. min (BPM), indicative SG estimate and temperature into iBLOPPER CLOUD.
 
-We support two different versions of iBLOPPER either detection by vibration/gyroscope sensor (iBLOPPERV) or by using a sound sensor (iBLOPPERS). By 2023 we promote the sound version as best suited for (s)airlocks and most users. A
+We support two different versions of iBLOPPER either detection by vibration/gyroscope sensor (iBLOPPERV) or by using a sound sensor (iBLOPPERS). 
 
 Secondly, the iBLOPPER can trigger a set of Wifi Smart Plug from Shelly or Tasmota over your local internet by http commands and hence you can control your frezzer/heating agent from iBLOPPER CLOUD.
 
 To use the “iBLOPPER” just attach the iBLOPPER to your airlock, then enter your brew details at iBLOPPER CLOUD. During the brew at preferably after high kreutzen you will need to take one hydrometer reading and by very simple math you will be able to predict the final gravity by a few units. All while you monitor from the outside of the fermenter.
 
-![image](https://github.com/kbaggen/iBLOPPER-ESP8266/assets/16992918/2af5d56a-ccba-4deb-912c-fb24895f3323)
 
 
 ### iBLOPPER CLOUD CONNECTED. 
